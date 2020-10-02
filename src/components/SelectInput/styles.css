@@ -1,0 +1,29 @@
+.input {
+    display: inline-block;
+    width: 250px;
+    height: 32px;
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin: 0;
+    color: var(--app-dark);
+}
+
+.placeholder {
+    color: var(--app-grey);
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.placeholder[class*="is-selected"] {
+    color: inherit;
+    font-weight: bold;
+}
+
+.menu {
+    text-align: left;
+    font-weight: bold;
+}
