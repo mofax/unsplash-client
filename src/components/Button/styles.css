@@ -1,0 +1,41 @@
+.button {
+    text-transform: uppercase;
+    background-color: var(--app-blue);
+    border: none;
+    padding: 10px;
+    min-width: 150px;
+    color: var(--app-white);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-radius: 10%/50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button:focus,
+.button:active {
+    border: none;
+    outline: none;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.outline {
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: var(--app-blue);
+    border: 1px solid currentColor;
+    background-color: white;
+    min-width: 100px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
+.outline:focus,
+.outline:active {
+    border: auto;
+    outline: auto;
+}
