@@ -1,0 +1,40 @@
+{
+    "name": "mastermindworks",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel src/index.html --no-autoinstall",
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 1 Chrome version"
+    ],
+    "devDependencies": {
+        "@types/jest": "^26.0.14",
+        "@types/react": "^16.9.49",
+        "@types/react-dom": "^16.9.8",
+        "@types/react-test-renderer": "^16.9.3",
+        "@types/unsplash-js": "^6.3.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^26.4.2",
+        "postcss-modules": "^3.2.2",
+        "react-test-renderer": "^16.13.1",
+        "ts-jest": "^26.4.1",
+        "typescript": "^4.0.2"
+    },
+    "dependencies": {
+        "@types/react-leaflet": "^2.5.2",
+        "mksuid": "^0.1.1",
+        "mobx": "^6.0.0",
+        "mobx-react": "^7.0.0",
+        "mobx-react-lite": "^3.0.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-dropdown": "^1.9.0",
+        "unsplash-js": "^6.3.0"
+    }
+}
