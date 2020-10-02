@@ -3,7 +3,7 @@ import * as React from "react";
 import { Spinner } from "./component";
 import renderer from "react-test-renderer";
 
-describe("<Button>", function () {
+describe("<Spinner>", function () {
     it("renders correctly", () => {
         const tree = renderer.create(<Spinner />).toJSON();
         expect(tree).toMatchSnapshot();
