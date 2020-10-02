@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button> renders correctly 1`] = `
+<span
+  className=""
+  style={
+    Object {
+      "height": 16,
+      "width": 16,
+    }
+  }
+/>
+`;
+
+exports[`<Button> renders dark correctly 1`] = `
+<span
+  className=""
+  style={
+    Object {
+      "height": 16,
+      "width": 16,
+    }
+  }
+/>
+`;
+
+exports[`<Button> renders dimensions correctly 1`] = `
+<span
+  className=""
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+/>
+`;

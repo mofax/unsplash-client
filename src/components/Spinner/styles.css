@@ -1,0 +1,33 @@
+.spinner {
+    /* Spinner size and color */
+    width: 20px;
+    height: 20px;
+    border-top-color: var(--app-white);
+    border-left-color: var(--app-white);
+
+    /* Additional spinner styles */
+    animation: spinner 400ms linear infinite;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.dark {
+    border-top-color: var(--app-light-blue);
+    border-left-color: var(--app-light-blue);
+}
+/* Animation styles */
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
