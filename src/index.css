@@ -1,0 +1,32 @@
+:root {
+    --app-dark: #050417;
+    --app-light-blue: #7fd6f2;
+    --app-blue: #2a2b8d;
+    --app-grey: #d5d7e5;
+    --app-white: white;
+    --app-red: red;
+}
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(250, 250, 250, 1);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+select {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.noscroll {
+    overflow: hidden;
+}
