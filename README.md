@@ -6,11 +6,16 @@
 
 **[NOTE] keys.ts**
 
-Before this project can run, you need to create a file `keys.ts` in the project root. This file should export your unsplash access key
+Before this project can run, you need to create a file `keys.ts` in the project root.  
+This file should export the following:
+
+1. unsplash access key
+2. google maps key
 
 ```ts
 // keys.ts
 export const UNSPLASH_ACCESS_KEY = "5FO................1E0";
+export const GOOGLE_MAPS_KEY = "AIza...................KWM";
 ```
 
 To run in development, first install the dependencies via npm

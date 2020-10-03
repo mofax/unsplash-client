@@ -1,7 +1,9 @@
 import * as React from "react";
 import * as styles from "./styles.css";
 
+import { GOOGLE_MAPS_KEY } from "../../../keys";
 import { ImageStore } from "../../mobx/images";
+import Marker from "../../svg/mapmarker";
 import { Spinner } from "../Spinner/component";
 import { classNames } from "../../tools/classnames";
 import imageModalStore from "../../mobx/image-modal";
@@ -98,6 +100,33 @@ export class ImageDetailsModalComponent extends React.PureComponent<
             );
         }
 
+        //embed google maps
+        let mapsNode = null;
+        const location = image.location;
+        if (
+            location &&
+            location.position.latitude &&
+            location.position.longitude
+        ) {
+            const center = `${location.position.latitude},${location.position.longitude}`;
+            const link = `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_KEY}&center=${center}&q=${location.name}`;
+
+            mapsNode = (
+                <div className={styles.mapsWrapper}>
+                    <iframe
+                        className={styles.mapsIframe}
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        src={link}
+                        allowFullScreen
+                    ></iframe>
+                    <div className={styles.mapsLocationName}>
+                        <Marker /> {location.name}
+                    </div>
+                </div>
+            );
+        }
+
         return (
             <div
                 className={classNames(overlayClasses)}
@@ -116,6 +145,7 @@ export class ImageDetailsModalComponent extends React.PureComponent<
                     </div>
 
                     <div className={styles.exif}>{exifNode}</div>
+                    {mapsNode}
                 </div>
             </div>
         );
